@@ -25,7 +25,7 @@ body{
     position: absolute;
     top: 20%;
     right: 0;
-    box-shadow: 0 0 700px 15px white;
+    box-shadow: 0 0 500px 20px white;
     rotate: -30deg;
     z-index: -1 ;
 }
@@ -46,10 +46,22 @@ header{
     z-index: 999;
 }
 
-header h1{
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 300;
+header > .logo{
+    font-size: 1.8rem;
+    width: 100px;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+header > .logo:hover {
+    font-size: 2.6rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header > .logo > span{
+    color: #0073E6;
 }
 
 nav{
@@ -57,4 +69,37 @@ nav{
     align-items: center;
     gap: 3rem;
     margin-left: -5%;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav > a:hover{
+    font-size: 2rem;
+    color: #0073E6;
+    font-weight: bold;
+}
+
+#btn-contact{
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    border-style: dashed;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-contact:hover{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0073E6;
+    background-color: transparent;
+    border: none;
+
 }

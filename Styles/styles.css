@@ -157,6 +157,50 @@ nav > a:hover{
     font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.scrolling-text-wrapper {
+    display: flex;
+}
+
+.static-text {
+    margin-right: 15px;
+    font-size: 2.5rem;
+}
+
+.word-cycler {
+    font-size: 3.5rem;
+    height: 4rem;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.word {
+    display: flex;
+    line-height: 4rem;
+    animation: word-scroll 8s infinite; /* 8s total cycle time, endless loop */
+    padding: 0;
+    margin: 0;
+}
+
+#word-sycler-1{
+    color: #0073E6;
+}
+#word-sycler-2{
+    color: mediumseagreen;
+}
+#word-sycler-3{
+    color: gray;
+}
+
+@keyframes word-scroll {
+    0%, 25% { transform: translateY(0); }
+
+    30%, 55% { transform: translateY(-4rem); }
+
+    60%, 85% { transform: translateY(-4rem); }
+
+    90%, 100% { transform: translateY(0); }
+}
+
 .hero-content > h1{
     font-size: 4rem;
     line-height: 1;

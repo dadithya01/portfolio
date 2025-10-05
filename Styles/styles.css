@@ -309,6 +309,9 @@ nav > a:hover{
         font-size: 1rem;
     }
 
+    nav > a:hover, nav > a:focus { font-size: 1.2rem; text-shadow: none; font-weight: normal; }
+    nav > a:active { background-color: rgba(0, 115, 230, 0.2); border-radius: 4px; }
+
     #btn-contact {
         width: 100%;
         justify-content: center;

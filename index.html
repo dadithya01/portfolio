@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adithya Peiris</title>
+    <title>Adithya Peiris | Developer Portfolio</title>
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
 
-<img class="image-gradient-right" src="Assets/Images/gradient.png" alt="gradiant">
+<div class="background-grid"></div>
+
+<div id="mouse-glow-spotlight"></div>
+
 <div class="layer-blur-right"></div>
-<img class="image-gradient-left" src="Assets/Images/gradient.png" alt="gradiant">
 <div class="layer-blur-left"></div>
 <div class="navbar">
     <header>
         <a href="#" class="logo">Adithya<span> Peiris</span></a>
-
-
         <nav class="nav-links">
             <a href="#"><i class="fa-solid fa-house"></i> Home</a>
             <a href="#aboutMe"><i class="fa-solid fa-user"></i> ABOUT ME</a>
@@ -36,21 +36,39 @@
         <h1><span id="h">H</span>i<span>,</span> I'm Adithya Peiris.</h1>
         <div class="scrolling-text-wrapper">
             <p class="static-text">I love to code on</p>
-            <div class="word-cycler">
+            <div>
                 <span class="word" id="word-sycler-1">Linux.</span>
                 <span class="word" id="word-sycler-2">F1.</span>
-                <span class="word" id="word-sycler-3">motorsports.</span>
+                <span class="word" id="word-sycler-3">motorsports</span>
             </div>
         </div>
         <a href="#aboutMe" >Learn More</a>
     </div>
-    <div class="hero-image">
-        <img src="Assets/Images/hero-image.png" alt="Hero Image">
-    </div>
+<!--    <div class="hero-image">-->
+<!--        <img src="Assets/Images/PXL_20250801_131013012.PORTRAIT.jpg" alt="Hero Image">-->
+<!--    </div>-->
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const spotlight = document.getElementById('mouse-glow-spotlight');
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
+        if (!isTouchDevice) {
+            document.addEventListener('mousemove', (e) => {
+                spotlight.style.cssText = `
+                    left: ${e.clientX}px;
+                    top: ${e.clientY}px;
+                    opacity: 1.0;
+                `;
+            });
 
+            document.addEventListener('mouseleave', () => {
+                spotlight.style.opacity = '0.0';
+            });
+        }
+    });
+</script>
 <script src="https://kit.fontawesome.com/55e02a05f5.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -213,9 +213,11 @@ nav > a:hover{
 }
 
 .hero-content > h1{
-    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-size: clamp(4.5rem, 7vw, 5rem);
     line-height: 1;
     font-weight: 900;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-content > h1 > #h{
@@ -244,7 +246,7 @@ nav > a:hover{
 }
 
 .scrolling-text-wrapper {
-    justify-content: center; /* Center the words under the heading */
+    justify-content: center;
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
@@ -328,15 +330,15 @@ nav > a:hover{
 
     .hero-content {
         gap: 2.5rem;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .hero-content > h1 {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 10vw, 4rem);
     }
 
     .hero-content > h1 > #h {
-        font-size: 7.5rem;
+        font-size: clamp(5rem, 15vw, 8rem);
     }
 
     .hero-content > p {

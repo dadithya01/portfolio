@@ -310,6 +310,7 @@ nav > a:hover{
     }
 
     nav > a:hover, nav > a:focus { font-size: 1.2rem; text-shadow: none; font-weight: normal; }
+
     nav > a:active { background-color: rgba(0, 115, 230, 0.2); border-radius: 4px; }
 
     #btn-contact {
@@ -326,6 +327,10 @@ nav > a:hover{
     #contact-ico {
         padding: 0;
     }
+
+    #btn-contact:hover, #btn-contact:focus { width: 80%; box-shadow: none; }
+
+    #btn-contact:active { background-color: rgba(0, 115, 230, 0.2); }
 
     .hero {
         padding: 5rem 2rem ;

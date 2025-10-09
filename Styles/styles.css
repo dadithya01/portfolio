@@ -44,7 +44,7 @@ body{
 .layer-blur-right{
     height: 0;
     width: 20rem;
-    position: absolute;
+    position: fixed;
     top: 20%;
     right: 0;
     box-shadow: 0 0 700px 70px var(--primary-color);
@@ -55,7 +55,7 @@ body{
 .layer-blur-left{
     height: 0;
     width: 20rem;
-    position: absolute;
+    position: fixed;
     bottom: 20%;
     left: 0;
     box-shadow: 0 0 700px 70px var(--primary-color);

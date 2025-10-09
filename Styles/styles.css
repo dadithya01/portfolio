@@ -565,7 +565,7 @@ nav > a:hover{
 
     .layer-blur-right,
     .layer-blur-left {
-        width: 12rem;
-        box-shadow: 0 0 500px 45px var(--primary-color);
+        width: 10rem;
+        box-shadow: 0 0 400px 45px var(--primary-color);
     }
 }

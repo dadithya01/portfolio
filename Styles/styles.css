@@ -368,63 +368,68 @@ nav > a:hover{
     box-shadow: 0 0 15px #0073E6;
 }
 
+/*Mobile and tablets*/
 @media (max-width: 1225px) {
     body {
         padding: 0 0.5rem;
     }
 
-    /* --- Navigation Bar Adjustments --- */
+/* --- Navigation Bar Adjustments --- */
+    .navbar {
+        top: 0;
+    }
     header {
-                flex-direction: column;
-                align-items: center;
-            }
+        flex-direction: column;
+        align-items: center;
+    }
 
-            header > .logo {
-                font-size: 2rem;
-                width: auto;
-                margin-bottom: 1rem;
-            }
+    header > .logo {
+        font-size: 2rem;
+        width: auto;
+        margin-bottom: 1rem;
+    }
 
-            nav {
-                width: 100%;
-                display: flex;
-                position: relative;
-                flex-wrap: wrap;
-                gap: 1.5rem;
-                margin-left: 0;
-                margin-bottom: 1rem;
-                justify-content: center;
-            }
+    nav {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
 
-            nav > a {
-                font-size: 1rem;
-                color: var(--text-color);
-            }
+    nav > a {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
 
-            nav > a:hover, nav > a:focus { font-size: 1.2rem; text-shadow: none; font-weight: normal; }
+    nav > a:hover, nav > a:focus { font-size: 1.2rem; text-shadow: none; font-weight: normal; }
 
-            nav > a:active { background-color: var(--primary-color); border-radius: 4px; }
+    nav > a:active { background-color: var(--primary-color); border-radius: 4px; }
 
-            #btn-contact {
-                width: 100%;
-                justify-content: center;
-                padding: 0.8rem;
-                border-style: solid;
-            }
+    #btn-contact {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem;
+        border-style: solid;
+        color: var(--text-color);
+    }
 
-            #btn-contact > .btn-text {
-                display: none;
-            }
+    #btn-contact > .btn-text {
+        display: none;
+    }
 
-            #contact-ico {
-                padding: 0;
-            }
+    #contact-ico {
+        padding: 0;
+    }
 
-            #btn-contact:hover, #btn-contact:focus { width: 80%; box-shadow: none; }
+    #btn-contact:hover, #btn-contact:focus { width: 80%; box-shadow: none; }
 
-            #btn-contact:active { background-color: var(--primary-color); }
+    #btn-contact:active { background-color: var(--primary-color); }
 
-    /* --- Hero Section Adjustments --- */
+/* --- Hero Section Adjustments --- */
     .hero {
         padding: 40vh 0 15vh;
         min-height: auto;
@@ -451,7 +456,7 @@ nav > a:hover{
         font-size: 7.5rem;
     }
 
-    /* --- About Section Adjustments --- */
+/* --- About Section Adjustments --- */
     .about-section {
         padding: 5vh 0.5rem;
         margin-top: 0;

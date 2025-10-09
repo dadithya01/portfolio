@@ -276,7 +276,7 @@ nav > a:hover{
 
 .about-card {
     background: transparent;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 20px;
     padding: 3rem;
     max-width: 1200px;
@@ -289,6 +289,7 @@ nav > a:hover{
     transform: scale(1);
     box-shadow: 0 0 70px var(--secondary-color);
     background-color: black;
+    border: 1px solid var(--primary-color);
 }
 
 .about-content-container {
@@ -570,8 +571,14 @@ nav > a:hover{
     }
 
     @media (max-width: 600px) {
+        /* --- About Section --- */
+        .bio-text{
+            font-weight: bold;
+        }
+
+        /* --- Services Section --- */
         .service-card > p {
-            color: var(--text-color);
+            font-weight: bold;
         }
     }
 }

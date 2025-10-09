@@ -548,6 +548,8 @@ nav > a:hover{
         grid-template-columns: 1fr;
         padding-top: 0.5rem;
         gap: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5;
     }
 
     .bio-text h3 {
@@ -568,17 +570,5 @@ nav > a:hover{
     .layer-blur-left {
         width: 15rem;
         box-shadow: 0 0 400px 50px var(--primary-color);
-    }
-
-    @media (max-width: 600px) {
-        /* --- About Section --- */
-        .bio-text{
-            font-weight: bold;
-        }
-
-        /* --- Services Section --- */
-        .service-card > p {
-            font-weight: bold;
-        }
     }
 }

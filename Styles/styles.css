@@ -280,18 +280,14 @@ nav > a:hover{
     border-radius: 20px;
     padding: 3rem;
     max-width: 1200px;
-    width: 100%;
-    box-shadow:
-            0 0 50px var(--secondary-color);
+    box-shadow: 0 0 50px var(--secondary-color);
     transition: transform 0.5s ease-out, box-shadow 0.6s ease-out;
     transform: scale(0.95);
 }
 
 .about-card:hover {
     transform: scale(1);
-    box-shadow:
-            0 0 70px var(--secondary-color);
-    cursor: pointer;
+    box-shadow: 0 0 70px var(--secondary-color);
     background-color: black;
 }
 
@@ -328,7 +324,7 @@ nav > a:hover{
     padding-top: 1rem;
 }
 
-.bio-text h3 {
+.bio-text > h3 {
     color: var(--text-color);
     font-family: 'Asimovian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 2px;
@@ -345,7 +341,7 @@ nav > a:hover{
     gap: 1rem;
 }
 
-.bio-text p {
+.bio-text > p {
     color: var(--text-color);
     font-size: 1.1rem;
 }
@@ -365,6 +361,61 @@ nav > a:hover{
     background-color: #0073E6;
     color: var(--text-color);
     box-shadow: 0 0 15px #0073E6;
+}
+
+/* --- Shared Section Styles (For Services, Projects, Blogs) --- */
+.services-section, .projects-section, .blogs-section {
+    padding: 10vh 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* --- Services Section Styles --- */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.service-card {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    scale: 1;
+}
+
+.service-card:hover {
+    background-color: black;
+    transform:scale(1.05);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 30px var(--secondary-color);
+    cursor: default;
+}
+
+.service-card > i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card > h3 {
+    font-family: 'Asimovian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.service-card > p {
+    color: var(--secondary-color);
 }
 
 /*Mobile and tablets*/

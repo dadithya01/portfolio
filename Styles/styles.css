@@ -417,6 +417,7 @@ nav > a:hover{
 
 .service-card > p {
     color: var(--text-color);
+    margin-top: 1rem;
 }
 
 /* --- Projects Section Styles --- */
@@ -615,14 +616,14 @@ nav > a:hover{
 
     .about-card {
         padding: 1.5rem;
-        transform: scale(1);
+        transform: scale(0.98);
         box-shadow: 0 0 0;
         background-color: transparent;
     }
 
     .about-card:hover {
         transform: scale(1);
-        box-shadow: 0 0 0;
+        box-shadow: 0 0 50px var(--secondary-color);
         cursor: default;
         background-color: black;
     }
@@ -663,18 +664,5 @@ nav > a:hover{
     }
 
 /*Service Section Adjustments*/
-    .service-card {
-        transform: scale(1);
-        background-color: transparent;
-    }
-    .service-card:hover {
-        transform: scale(1);
-        box-shadow: 0 0 0;
-        background-color: black;
-    }
 
-    .service-card > p{
-        font-weight: bold;
-        line-height: 1.5;
-    }
 }

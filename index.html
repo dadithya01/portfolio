@@ -8,168 +8,158 @@
 </head>
 <body>
 
-<div class="background-grid"></div>
+<div class="background-glow"></div>
 
-<div id="mouse-glow-spotlight"></div>
-
-<div class="layer-blur-right"></div>
-<div class="layer-blur-left"></div>
 <!-- Navigation -->
-<div class="navbar">
-    <header>
-        <a href="#" class="logo">Adithya<span> Peiris</span></a>
+<nav>
+    <div class="logo">ADITHYA</div>
+    <ul class="nav-menu">
+        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="#aboutMe"><i class="fa-solid fa-user"></i> ABOUT ME</a></li>
+        <li><a href="#services"><i class="fa-solid fa-seedling"></i> SERVICES</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-list-check"></i> PROJECTS</a></li>
+        <li><a href="#blogs"><i class="fa-solid fa-blog"></i> BLOGS</a></li>
+    </ul>
+    <button id="btn-contact">
+        <i class="fa-solid fa-phone fa-shake" id="contact-ico"></i>
+        <span class="btn-text">CONTACT</span>
+    </button>
+</nav>
 
-        <nav class="nav-links">
-            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#aboutMe"><i class="fa-solid fa-user"></i> ABOUT ME</a>
-            <a href="#services"><i class="fa-solid fa-seedling"></i> SERVICES</a>
-            <a href="#projects"><i class="fa-solid fa-list-check"></i> PROJECTS</a>
-            <a href="#blogs"><i class="fa-solid fa-blog"></i> BLOGS</a>
-        </nav>
-        <button id="btn-contact">
-            <i class="fa-solid fa-phone fa-shake" id="contact-ico"></i>
-            <span class="btn-text">CONTACT</span>
-        </button>
-    </header>
-</div>
-
-<!-- Hero Section -->
-<div class="hero">
+<!-- Hero -->
+<section class="hero" id="home">
     <div class="hero-content">
-        <h1><span id="h">H</span>i<span>,</span> I'm Adithya Peiris.</h1>
-        <div class="scrolling-text-wrapper">
-            <p class="static-text">I engineer for </p>
-            <div>
-                <span class="word" id="word-sycler-1">ALGORITHMS.</span>
-                <span class="word" id="word-sycler-2">SCALABILITY.</span>
-                <span class="word" id="word-sycler-3">AGILITY.</span>
-            </div>
+        <div class = "container">
+            <h1>Hi, my name is</h1>
+            <h1>Adithya.</h1>
         </div>
-        <a href="#aboutMe" >Learn More</a>
-    </div>
-</div>
-
-<!-- About Me Section -->
-<section id="aboutMe" class="about-section">
-    <h2 class="section-title">ABOUT ME</h2>
-    <div class="about-card">
-        <div class="about-content-container">
-            <div class="profile-image-card">
-                <img src="Assets/Images/PXL_20250801_131013012.PORTRAIT.jpg" alt="Profile Picture" class="profile-photo">
-            </div>
-            <div class="bio-text">
-                <h3>SOFTWARE ENGINEER | DEV</h3>
-                <div class="content-block">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dignissimos distinctio dolor dolores ernarum molestias pariatur, quae quasi quisquam quod ratione, repellendus, reprehenderit sit velit. A accusamus accusantium aliquam, cumque dolores dolorum eaque error eveniet exercitationem facere facilis fuga in laudantium magni non, odio officiis quam quis sapiente similique sunt unde ut velit voluptas voluptatem voluptatibus voluptatum.
-                    </p>
-                </div>
-                <div class="content-block">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi deleniti dolores ea eaque earum eligendi illum ipsa ipsum magni minus porro, quidem quis quod similique suscipit ullam ut.
-                    </p>
-                </div>
-                <a href="#projects" class="prj-button">See My Latest Projects</a>
-            </div>
+        <p>Crafting elegant digital solutions with precision and creativity</p>
+        <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
     </div>
 </section>
 
-<!-- Services Section -->
-<section id="services" class="services-section">
-    <h2 class="section-title">SERVICES</h2>
-    <div class="services-container">
+<!-- About -->
+<section id="aboutMe">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <h3>SOFTWARE ENGINEER | DEV</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore ducimus est, fugiat fugit laborum necessitatibus recusandae repudiandae sequi veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda commodi distinctio eveniet, iusto libero molestiae obcaecati odio pariatur voluptatibus?</p>
+            <div class="skills">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">Node.js</span>
+            </div>
+        </div>
+        <div class="about-visual">
+            <div class="shape-item shape-item-1"></div>
+            <div class="shape-item shape-item-2"></div>
+            <div class="shape-item shape-item-3"></div>
+        </div>
+    </div>
+</section>
 
+<!-- Services -->
+<section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-grid">
         <div class="service-card">
-            <i class="fa-solid fa-code fa-bounce"></i>
+            <i class="fa-solid fa-code fa-bounce fa-2x"></i>
             <h3>Web Front-End Development</h3>
             <p>Building responsive, high-performance, and modern user interfaces. Proficient in **React**, **Vanilla JavaScript**, HTML5, and advanced CSS techniques (like the one used in this portfolio!).</p>
         </div>
-
         <div class="service-card">
-            <i class="fa-solid fa-computer fa-bounce"></i>
+            <i class="fa-solid fa-computer fa-bounce fa-2x"></i>
             <h3>Custom Desktop Apps</h3>
             <p>Designing and developing cross-platform desktop applications tailored to specific business needs, often utilizing frameworks like **Electron** or native tools for **Linux** environments.</p>
         </div>
-
         <div class="service-card">
-            <i class="fa-solid fa-mobile-screen-button fa-bounce"></i>
+            <i class="fa-solid fa-mobile-screen-button fa-bounce fa-2x"></i>
             <h3>Mobile App Development</h3>
             <p>Building native-feeling mobile applications for both iOS and Android platforms using modern cross-platform solutions like **React Native** or native Java/Kotlin/Swift.</p>
         </div>
-
         <div class="service-card">
-            <i class="fa-solid fa-object-ungroup fa-bounce"></i>
+            <i class="fa-solid fa-object-ungroup fa-bounce fa-2x"></i>
             <h3>UI/UX Design & Prototyping</h3>
             <p>Creating intuitive and engaging user experiences through effective **Information Architecture** and visual design. Tools include **Figma** and Sketch for rapid prototyping.</p>
         </div>
-
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <h2 class="section-title">PROJECTS</h2>
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
-
-        <div class="project-card">
-            <img src="Assets/Images/library_management_system.png" alt="Library Management CLI Project" loading="lazy">
-            <div class="project-info">
-                <div class="project-info">
-                    <h4>Library Management CLI System</h4>
-                    <p>A comprehensive system designed for efficient tracking of books, members, and borrowings. Built using **Java** and **MYSQL** for persistent data management.</p>
-                    <div class="project-tags"><span>Java</span><span>MySQL</span><span> CLI App</span></div>
-                    <a href="https://github.com/dadithya01/Libry_management.git" target="_blank">View Code <i class="fa-brands fa-github"></i></a>
+        <div class="project">
+            <div class="project-visual">
+                <img src="Assets/Images/library_management_system.png" alt="Library Management CLI Project" loading="lazy">
+            </div>
+            <div>
+                <h3>Library Management CLI System</h3>
+                <p>A comprehensive system designed for efficient tracking of books, members, and borrowings. Built using **Java** and **MYSQL** for persistent data management.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">CLI App</span>
                 </div>
+                <a href="https://github.com/dadithya01/Libry_management.git" class="project-link">View Project →</a>
             </div>
         </div>
-
-        <div class="project-card">
-            <img src="Assets/Images/powerhouse_mvc.png" alt="PowerHouse Gym Management System(MVC)" loading="lazy">
-            <div class="project-info">
-                <h4>Powerhouse Management System(MVC)</h4>
+        <div class="project">
+            <div class="project-visual">
+                <img src="Assets/Images/powerhouse_mvc.png" alt="PowerHouse Gym Management System(MVC)" loading="lazy">
+            </div>
+            <div>
+                <h3>Powerhouse Management System(MVC)</h3>
                 <p>A system for managing a fitness center's operations, built using **JavaFX** for the modern UI and following the **MVC Architecture** to ensure modularity and scalability with a **MySQL** database.</p>
-                <div class="project-tags"><span>JavaFX</span><span>MVC</span><span>MySQL</span><span>Architecture</span><span>Desktop APP</span></div>
-                <a href="https://github.com/dadithya01/Powerhouse.git" target="_blank">View Code <i class="fa-brands fa-github"></i></a>
+                <div class="project-tags">
+                    <span class="project-tag">JavaFX</span>
+                    <span class="project-tag">MVC</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">Architecture</span>
+                    <span class="project-tag">Desktop App</span>
+                </div>
+                <a href="https://github.com/dadithya01/Powerhouse.git" class="project-link">View Project →</a>
             </div>
         </div>
-
-        <div class="project-card">
-            <img src="Assets/Images/powerhouse_mvc.png" alt="PowerHouse Gym Management System(Layered)" loading="lazy">
-            <div class="project-info">
-                <h4>Powerhouse Management System (Layered)</h4>
+        <div class="project">
+            <div class="project-visual">
+                <img src="Assets/Images/powerhouse_mvc.png" alt="PowerHouse Gym Management System(Layered)" loading="lazy">
+            </div>
+            <div>
+                <h3>Powerhouse Management System (Layered)</h3>
                 <p>A system for managing a fitness center's operations. Developed using **JavaFX** and strictly following the **Layered Architecture** for superior modularity and scalability with a **MySQL** database.</p>
-                <div class="project-tags"><span>JavaFX</span><span>Layered</span><span>MySQL</span><span>Architecture</span><span>Desktop APP</span></div>
-                <a href="https://github.com/dadithya01/Powerhouse-Layered.git" target="_blank">View Code <i class="fa-brands fa-github"></i></a>
+                <div class="project-tags">
+                    <span class="project-tag">JavaFX</span>
+                    <span class="project-tag">Layered</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">Architecture</span>
+                    <span class="project-tag">Desktop App</span>
+                </div>
+                <a href="https://github.com/dadithya01/Powerhouse-Layered.git" class="project-link">View Project →</a>
             </div>
         </div>
-
     </div>
-    <a href="#contact" class="contact">
-        <i class="fa-solid fa-phone fa-shake"></i>
-        Let's Build Something Together!</a>
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const spotlight = document.getElementById('mouse-glow-spotlight');
-        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+<!-- CTA -->
+<section class="cta" id="contact">
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind? I'd love to hear about it and help bring your ideas to life.</p>
+    <a href="mailto:hello@adithya.dev" class="btn btn-primary">Get In Touch</a>
+</section>
 
-        if (!isTouchDevice) {
-            document.addEventListener('mousemove', (e) => {
-                spotlight.style.cssText = `
-                    left: ${e.clientX}px;
-                    top: ${e.clientY}px;
-                    opacity: 1.0;
-                `;
-            });
-
-            document.addEventListener('mouseleave', () => {
-                spotlight.style.opacity = '0.0';
-            });
-        }
-    });
-</script>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Adithya Peiris. All rights reserved.</p>
+</footer>
 <script src="https://kit.fontawesome.com/55e02a05f5.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -430,7 +430,7 @@ nav {
 }
 
 .btn {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
     font-size: 0.95rem;
@@ -476,7 +476,7 @@ section {
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 700;
     margin-bottom: 3rem;
@@ -497,6 +497,7 @@ section {
 }
 
 .about-text h3 {
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: 600;
@@ -530,7 +531,6 @@ section {
     transform: scale(1.02);
     box-shadow: 0 20px 150px var(--secondary-color);
 }
-
 
 .shape-item {
     position: absolute;
@@ -596,6 +596,7 @@ section {
 }
 
 .skill-tag {
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 1px solid var(--secondary-color);
     padding: 0.7rem 1.3rem;
     border-radius: 50px;
@@ -623,10 +624,10 @@ section {
 
 .service-card {
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid var(--secondary-color);
     padding: 2rem;
     border-radius: 10px;
-    background: rgba(255,255,255,0.02);
+    background: #FFFFFF05;
     transition: all 0.3s;
     cursor: pointer;
     position: relative;
@@ -634,13 +635,14 @@ section {
 }
 
 .service-card:hover {
-    border-color: rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.05);
+    border-color: var(--primary-color);
+    background: #FFFFFF0C;
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255,255,255,0.1);
+    box-shadow: 0 10px 20px var(--secondary-color);
 }
 
 .service-card h3 {
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -649,7 +651,7 @@ section {
 }
 
 .service-card p {
-    color: #aaa;
+    color: var(--text-color);
     font-size: 0.95rem;
     line-height: 1.7;
     position: relative;
@@ -670,14 +672,14 @@ section {
     gap: 3rem;
     align-items: center;
     padding: 3rem;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid var(--secondary-color);
     border-radius: 15px;
-    background: rgba(255,255,255,0.01);
+    background: #FFFFFF02;
     transition: all 0.3s;
 }
 
 .project:hover {
-    border-color: rgba(255,255,255,0.4);
+    border-color: var(--primary-color);
     background: rgba(255,255,255,0.05);
     transform: translateY(-5px);
 }
@@ -686,7 +688,7 @@ section {
     width: 100%;
     aspect-ratio: 1;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03));
-    border: 2px solid rgba(255,255,255,0.2);
+    border: 2px solid var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -703,18 +705,18 @@ section {
 
 .project:hover .project-visual {
     transform: scale(1.05) rotate(2deg);
-    border-color: rgba(255,255,255,0.5);
+    border-color: var(--primary-color);
 }
 
 .project h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .project p {
-    color: #aaa;
+    color: var(--text-color);
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -727,34 +729,37 @@ section {
 }
 
 .project-tag {
-    border: 1px solid rgba(255,255,255,0.3);
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid dodgerblue;
     padding: 0.4rem 0.9rem;
     font-size: 0.8rem;
-    font-weight: 500;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 10px;
     transition: all 0.3s;
+    cursor: pointer;
+    color: dodgerblue;
 }
 
 .project-tag:hover {
     background: rgba(255,255,255,0.1);
-    border-color: #fff;
 }
 
 .project-link {
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: inline-block;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 1px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--secondary-color);
     transition: all 0.3s;
 }
 
 .project-link:hover {
     margin-left: 10px;
-    color: #aaa;
-    border-color: #aaa;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .project:nth-child(even) {
@@ -767,33 +772,19 @@ section {
 }
 
 /* CTA */
-.cta {
+.email-contact {
     text-align: center;
     padding: 100px 2rem;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid var(--primary-color);
     margin: 50px auto;
     max-width: 800px;
     background: rgba(255,255,255,0.02);
     border-radius: 20px;
     position: relative;
-    overflow: hidden;
 }
 
-.cta::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1), transparent);
-    animation: radiusPulse 4s ease-in-out infinite;
-}
-
-@keyframes radiusPulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.2; }
-}
-
-.cta h2 {
-    font-family: 'Playfair Display', serif;
+.email-contact h2 {
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.8rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -801,19 +792,22 @@ section {
     z-index: 1;
 }
 
-.cta p {
-    color: #aaa;
+.email-contact p {
+    color: var(--text-color);
     margin-bottom: 2rem;
     font-size: 1.05rem;
     position: relative;
     z-index: 1;
 }
 
+#contact a{
+    font-family: "Asimovian" , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* Footer */
 footer {
     padding: 2rem 3rem;
     text-align: center;
-    color: #666;
+    color: var(--secondary-color);
     font-size: 0.9rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
 }

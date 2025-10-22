@@ -1100,9 +1100,11 @@ footer {
 
     .project h3{
         font-size: 2rem;
+        text-align: center;
     }
 
     .project p{
+        text-align: center;
         font-size: 1.1rem;
         line-height: 2rem;
     }

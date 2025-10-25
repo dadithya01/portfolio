@@ -810,7 +810,7 @@ section {
 
 .skill-card {
     text-align: center;
-    border: 1px solid #FFFFFF33;
+    border: 1px solid var(--secondary-color);
     border-radius: 15px;
     padding: 2.5rem 1.5rem;
     background: #FFFFFF02;
@@ -826,6 +826,7 @@ section {
 .skill-card:hover .skill-icon {
     animation: icon-beat 0.7s ease-in-out infinite;
     color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .skill-card:hover {
@@ -888,7 +889,7 @@ section {
 
 .carousel-track i {
     font-size: clamp(2rem, 5vw, 3rem);
-    margin: 0 2rem;
+    margin: 0 1.6rem;
     color: var(--primary-color);
     opacity: 0.7;
     transition: all 0.3s ease-in-out;

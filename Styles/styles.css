@@ -1208,18 +1208,23 @@ footer {
     /* Skills */
     .skills-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .skill-card {
         padding: 2rem 1.5rem;
         border-color: var(--primary-color);
+        margin: 0 2rem;
     }
 
     .skill-card:hover {
         transform: none;
         box-shadow: none;
         background: #FFFFFF02;
+    }
+
+    .skill-card:active{
+        transform: scale(1.05);
     }
 
     .skill-icon{

@@ -1069,6 +1069,7 @@ footer {
         height: auto;
         display: flex;
         justify-content: center;
+        order: -1;
     }
 
     .about-visual img{
@@ -1317,15 +1318,27 @@ footer {
         visibility: hidden;
     }
 
-    .logo {
-        background-color: transparent;
+    .logo{
+        width: 150rem;
+        font-weight: bold;
+        font-size: 2rem;
         visibility: visible;
-        font-size: 1.4rem;
-        width: 120px;
+        background-color: transparent;
     }
 
     .logo:hover {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        text-shadow: none;
+    }
+
+    .logo img {
+        visibility: visible;
+        width: 30%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .logo :active {
+        transform: scale(2);
     }
 
     #btn-contact {
@@ -1354,12 +1367,12 @@ footer {
         font-size: 16px;
         margin: 0 auto;
         text-align: center;
-        width: 100%;
+        width: 40%;
     }
 
     .container > h1:nth-child(2) {
         font-size: 50px;
-        width: 250px;
+        width: 210px;
         margin-top: 10px;
     }
 
@@ -1376,14 +1389,19 @@ footer {
 
     .btn {
         padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         width: 80%;
         max-width: 300px;
     }
 
     .btn-1:hover, .btn-2:hover {
-        font-size: 1rem;
-        transform: translateY(-2px);
+        font-size: 1.1rem;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .btn:active{
+        transform: scale(1.5);
     }
 
     /* Background Glow */
